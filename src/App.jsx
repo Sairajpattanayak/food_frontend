@@ -1,8 +1,8 @@
 import Navbar from "./Layout/Navbar";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Menu from "./pages/Menu";
+import About from "../src/pages/About"
 import Pages from "./pages/Pages";
 import Contact from "./pages/Contact";
 import BookTable from "./Components/BookTable"
