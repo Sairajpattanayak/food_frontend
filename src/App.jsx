@@ -1,5 +1,5 @@
 import Navbar from "./Layout/Navbar";
-import Footer from "./Layout/footer";
+import Footer from "./Layout/Footer"
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -37,7 +37,7 @@ function Layout() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/booktable" element={<BookTable />} />
           <Route path="/get-details/:id" element={<Detailspage />} />
-         <Route path="/order" element={<Order />} />
+          <Route path="/order" element={<Order />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/admin" element={<AdminProtectedRoute />}>
