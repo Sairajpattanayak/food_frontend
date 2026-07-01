@@ -1,5 +1,5 @@
 
-import Information from '../Components/information.jsx';
+import Information from '../Components/Information.jsx';
 import Vid from "../Components/Vid.jsx"
 import WeProvide from '../Components/WeProvide.jsx';
 import CustomerSay from './../Components/CustomerSay.jsx';
