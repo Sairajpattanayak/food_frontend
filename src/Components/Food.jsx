@@ -7,7 +7,7 @@ const Food = () => {
   const [foodData, setFoodData] = useState([]);
   const getAllData = async () => {
     try {
-      const response = await axios.get("http://localhost:8800/api/food/get-all-food")
+      const response = await axios.get("https://food-backend-jra9.onrender.com/api/food/get-all-food")
       setFoodData(response.data.foods)
     } catch (error) {
       console.log(error.message);
@@ -26,7 +26,7 @@ const Food = () => {
   const HandelDelete = async (id) => {
 
     try {
-      const response = await axios.delete(`http://localhost:8800/api/food/delete/${id}`, {
+      const response = await axios.delete(`https://food-backend-jra9.onrender.com/api/food/delete/${id}`, {
         withCredentials: true
       })
       alert(response.data.message);
