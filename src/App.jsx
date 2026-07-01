@@ -1,5 +1,5 @@
 import Navbar from "./Layout/Navbar";
-import Footer from "./Layout/Footer"
+
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -19,6 +19,7 @@ import Detailspage from "./pages/Detailspage";
 import Order from "./pages/Order";
 import Booking from "./pages/Bookings";
 import Bookings from "./pages/Bookings";
+import Footers from "./Layout/Footers";
 
 function Layout() {
   const location = useLocation()
@@ -37,7 +38,7 @@ function Layout() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/booktable" element={<BookTable />} />
           <Route path="/get-details/:id" element={<Detailspage />} />
-          <Route path="/order" element={<Order />} />
+         <Route path="/order" element={<Order />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/admin" element={<AdminProtectedRoute />}>
@@ -69,7 +70,7 @@ function Layout() {
 
         </Routes>
       </div>
-      {!isAdminRoute && <Footer />}
+      {!isAdminRoute && <Footers />}
     </>
   )
 }

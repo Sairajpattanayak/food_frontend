@@ -10,7 +10,7 @@ import img3 from "../assets/img-3.jpeg"
 import img4 from "../assets/img-4.jpeg"
 
 
-function Footer() {
+function Footers() {
   return (
     <>
       <footer className="Footer">
@@ -100,4 +100,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footers
