@@ -24,7 +24,6 @@ function Layout() {
   const location = useLocation()
 
   const isAdminRoute = location.pathname.startsWith("/admin");
-// Hii Test
   return (
     <>
       {!isAdminRoute && <Navbar />}
