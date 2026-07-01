@@ -1,5 +1,4 @@
 import Navbar from "./Layout/Navbar";
-
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -25,7 +24,7 @@ function Layout() {
   const location = useLocation()
 
   const isAdminRoute = location.pathname.startsWith("/admin");
-
+// Hii Test
   return (
     <>
       {!isAdminRoute && <Navbar />}
