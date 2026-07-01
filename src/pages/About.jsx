@@ -1,8 +1,8 @@
 
-import Vid from '../Components/Vid';
-import WeProvide from '../Components/WeProvide';
-import Information from '../Components/information';
-import CustomerSay from './../Components/CustomerSay';
+import Information from '../Components/information.jsx';
+import Vid from "../Components/Vid.jsx"
+import WeProvide from '../Components/WeProvide.jsx';
+import CustomerSay from './../Components/CustomerSay.jsx';
 function About () {
     return (
         <>
